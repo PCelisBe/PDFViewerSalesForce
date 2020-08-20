@@ -54,6 +54,8 @@ See https://github.com/adobe-type-tools/cmap-resources
         uint8Array[i] = raw.charCodeAt(i);
       }
       PDFViewerApplication.open(uint8Array);
+      PDFViewerApplication.appConfig.toolbar.openFile.setAttribute("hidden", "true");
+      PDFViewerApplication.appConfig.secondaryToolbar.openFileButton.setAttribute("hidden", "true");
     }
 
 </script>
